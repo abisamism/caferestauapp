@@ -64,7 +64,7 @@
         <div class="row">
           <div class="intro-text">
             <h1>{{brand.name}}</h1>
-            <p>Restaurant / Cafe' / Food Hub</p>
+            <p>Restaurant / Café / Food Hub</p>
             <a href="#about" class="btn btn-custom btn-lg page-scroll">Discover Story</a> </div>
           </div>
         </div>
@@ -127,10 +127,10 @@
               {% if meal.category == cat %}
 
                 <div class="portfolio-item">
-                  <div class="hover-bg"> <a href="{{meal.image.url}}" title="{{meal.name}}" data-lightbox-gallery="gallery1">
+                  <div class="hover-bg"> <a href="{{meal.image.url}}" title="{{meal.name}} (Rs. {{meal.price}})" data-lightbox-gallery="gallery1">
                     <div class="hover-text">
                       <h4>{{meal.name}}</h4>
-                      <h4 style="text-transform:capitalize">Rs {{meal.price}}</h4> 
+                      <h4 style="text-transform:capitalize">Rs. {{meal.price}}</h4> 
                     </div>
                     <img src="{{meal.image.url}}" class="img-responsive" alt="FoodItem"></a></div>
                 </div>
